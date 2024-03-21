@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #
 #   For this module, we are going to build off our Pet class that we created in
 #   m2 of the session 16 coding exercises.
@@ -26,9 +26,27 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class Pet:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"Name: {self.name}, Age: {self.age}"
+
+    def speak(self):
+        print(f"{self.name}: Meow Meow Meow")
+
+
+class dog(Pet):
+    def fetch(self):
+        print(f"{self.name} ran to get the stick!")
+
+    def speak(self):
+        print(f"{self.name}: Bark! Bark! Bark!")
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, write your own class of whatever type of pet you wish.
 #
@@ -46,9 +64,26 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class cat(Pet):
+    def __init__(self, name, age, color, sex):
+        self.name = name
+        self.age = age
+        self.color = color
+        self.sex = sex
+    
+    def __str__(self):
+        return f"Name: {self.name}, Age: {self.age}, Color: {self.color}, Sex: {self.sex}"
+    
+    def pur(self):
+        print(f"{self.name} began purring!")
+
+    def chase(self, prey):
+        print(f"{self.name} started chasing {prey}")
+
+        
 
 ###############################################################################
-# TODO: 3. (4 pts)
+# DONE: 3. (4 pts)
 #
 #   Now let's use our classes!
 #
@@ -71,4 +106,16 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+    p1 = dog("Max", 3)
+    print(p1)
+    p2 = cat("Tom", 4, "Orange", "Male")
+    print(p2)
 
+    p2.pur()
+    p1.fetch()
+    p2.speak()
+    p1.speak()
+    p2.chase(p1.name)
+
+main()
