@@ -1,5 +1,5 @@
 ###############################################################################
-# DONE: 1. (9 pts)
+# DONE4: 1. (9 pts)
 #
 #   For this _todo_, reference the code below.
 #
@@ -68,28 +68,28 @@ main()
 ###############################################################################
 # 
 #    Location 1          Location 2          Location 3
-#    a: 20               a: 20               a: 20
+#    a: 10               a: 10               a: 20
 #    m: x                m: x                m: x
-#    self.a: 5           self.a: x           self.a: x
-#    self.m: x           self.m: x           self.m: x
+#    self.a: x           self.a: 5           self.a: x
+#    self.m: x           self.m: 13          self.m: x
 #    t1.a: x             t1.a: x             t1.a: x
 #    t1.m: x             t1.m: x             t1.m: x
 #    t2.a: x             t2.a: x             t2.a: x
 #    t2.m: x             t2.m: x             t2.m: x
 #
 #    Location 4          Location 5          Location 6
-#    a: 34               a: x                a: 34
-#    m: 25               m: x                m: x
+#    a: 34               a: 34               a:28
+#    m: 25               m: 25                m: x
 #    self.a: x           self.a: x           self.a: x
 #    self.m: x           self.m: x           self.m: x
-#    t1.a: x             t1.a: x             t1.a: x
-#    t1.m: x             t1.m: x             t1.m: x
-#    t2.a: x             t2.a: x             t2.a: x
-#    t2.m: x             t2.m: x             t2.m: x
+#    t1.a: x             t1.a: 5             t1.a: x
+#    t1.m: x             t1.m: 28            t1.m: x
+#    t2.a: x             t2.a: 5             t2.a: x
+#    t2.m: x             t2.m: 15            t2.m: x
 #
 #   Location 7          Location 8          Location 9
-#   a: x                a: 20               a: x
-#   m: x                m: x                m: x
+#   a: 29               a: 20               a: 28
+#   m: 3                m: x                m: 29
 #   self.a: x           self.a: x           self.a: x
 #   self.m: x           self.m: x           self.m: x
 #   t1.a: x             t1.a: x             t1.a: x
